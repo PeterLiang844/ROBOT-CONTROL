@@ -1,0 +1,14 @@
+機器車操控實作教學
+raspberry
+ip:192.168.1.105
+帳號:pi
+密碼:raspberry
+1.先把機器車電源開啟
+2.打開Advanced IP Scanner，找到機器車IP
+3.打開VNWARE，先開啟終端機指令碼，
+輸入gedit  /etc/ssh/ssh_config，把其中   ForwardX11 改成YES
+儲存(如果不讓儲存，就用SUDO把權限改道最高， 在執行一次) ，
+4.後再到終端機輸入 SSH 名稱+@+iP去連接RASBERRY，並輸入密碼，即可連結上RASBERRY的終端機上，然後再用 cd Desktop/回到終端機桌面，用ls查看執行檔，並用python3 + 檔名.py去執行
+5.案q 或 ctrl + c即退出程式
+6.如要放新的程式，開啟WinSCP，輸入主機名稱(ip)，使用者名稱(帳號)，密碼，來登入RASBERRY裝置，即可直接到他的桌面來編輯或新增程式
+
